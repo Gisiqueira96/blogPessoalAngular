@@ -1,0 +1,27 @@
+.fs-56{
+    font-size: 56pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
+
+.bg-roxo{
+    background-color: #260273;
+}
+
+.txt-verdinho{
+    color: #cdfff6;
+}   
+
+.txt-verde{
+    color: #03a6a6;
+}
+
+.fa-publicar:hover{
+    color: #260273;
+}
+
+.fa-cancelar:hover{
+    color: red;
+}

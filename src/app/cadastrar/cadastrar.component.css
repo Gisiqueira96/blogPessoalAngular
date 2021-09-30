@@ -7,3 +7,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.fa-cadastrar:hover{
+    color: #260273;
+}
+
+.fa-cancelar:hover{
+    color: red;
+}

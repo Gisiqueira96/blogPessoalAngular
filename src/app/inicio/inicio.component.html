@@ -1,1 +1,111 @@
-<p>inicio works!</p>
+<!--Parte escrita de boas vindas-->
+<div class="conteiner-fluid">
+
+    <div class="row bg-roxo d-flex align-items-center">
+        <div class="col-md-6">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 txt-verdinho">
+                    <h1 class="fs-56">Seja Bem Vindo(a)!!</h1>
+                    <h5 class="fs-18">Expresse aqui os seus pensamentos e opiniões!</h5>
+                </div>
+            </div>
+            <!--Botões para postagem e ver postagens-->
+            <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6">
+                    <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova
+                        Postagem</button>
+                    <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Imagem-->
+        <div class="com-md-6 d-flex justify-content-center">
+            <img src="https://i.imgur.com/2VHI8PH.png" alt="" width="500px" height="500px">
+        </div>
+    </div>
+
+</div>
+
+<!--botões das Postagens-->
+<div class="conteiner mb-5 mt-5" id="postagens">
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+            <a class="nav-item nav-link active txt-verde font-weight-bold " id="nav-todasPostagens-tab"
+                data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens"
+                aria-selected="true">Todas as Postagens</a>
+
+            <a class="nav-item nav-link txt-verde font-weight-bold " id="nav-minhasPostagens-tab" data-toggle="tab"
+                href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas
+                Postagens</a>
+
+            <a class="nav-item nav-link txt-verde font-weight-bold " id="nav-postagemTema-tab" data-toggle="tab"
+                href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por
+                Tema</a>
+
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
+            aria-labelledby="nav-todasPostagens-tab"> TODAS AS POSTAGENS</div>
+
+        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+            MINHAS POSTAGENS</div>
+
+        <div class="tab-pane fade" id="nav-postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+            POSTAGENS POR TEMA </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Formulário para postagem-->
+            <div class="modal-body">
+
+                <div class="from-group">
+                    <label for="titulo"> Título</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Digite o Título">
+                </div>
+
+                <div class="from-group">
+                    <label for="texto"> Texto</label>
+                    <textarea class="form-control" name="texto" id="texto" rows="4" placeholder="Digite o texto"></textarea>
+                </div>
+
+                <div class="from-group">
+                    <label for="tema"> Escolha seu tema ou <a href="">cadastre um novo </a>: </label>
+                    <select class="form-control" name="tema" id="tema">
+                        <option value="">Temas</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fa-cancelar font-weight-bold"
+                    data-dismiss="modal">Cancelar</button>
+                <button type="button" style="background-color: #03a6a6; border-color:white"
+                    class="btn btn-primary fa-publicar font-weight-bold">Publicar</button>
+            </div>
+        </div>
+    </div>
+</div>
