@@ -1,0 +1,11 @@
+.txt-verde{
+    color: #03a6a6;
+}
+
+.fa-atualizar:hover{
+    color: #260273;
+}
+
+.fa-cancelar:hover{
+    color: red;
+}
