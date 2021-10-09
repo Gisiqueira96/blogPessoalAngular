@@ -1,5 +1,5 @@
 <!--Parte escrita de boas vindas-->
-<div class="conteiner-fluid">
+<div class="container-fluid">
 
     <div class="row bg-roxo d-flex align-items-center">
         <div class="col-md-6">
@@ -10,6 +10,7 @@
                     <h5 class="fs-18">Expresse aqui os seus pensamentos e opiniões!</h5>
                 </div>
             </div>
+            
             <!--Botões para postagem e ver postagens-->
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
@@ -29,7 +30,7 @@
 </div>
 
 <!--botões das Postagens-->
-<div class="conteiner mb-5 mt-5" id="postagens">
+<div class="container mb-5 mt-5" id="postagens">
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
 
@@ -84,6 +85,9 @@
                         <p class="card-text m-0"><small class="text-muted">
                                 {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
                             </small></p>
+
+                            <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3 " href="">Editar</a>
+                            <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
 
                     </div>
                 </div>
